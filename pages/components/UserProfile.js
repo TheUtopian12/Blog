@@ -1,7 +1,8 @@
 export default function UserProfile({ user }) {
     return (
       <div className="box-center">
-        <img src={user.photoURL } className="card-img-center" />
+       {/** <img src={user.photoURL || '/hacker.png'} className="card-img-center" />*/} 
+       <img src={'/hacker.png'} className="card-img-center" />
         <p>
           <i>@{user.username}</i>
         </p>
